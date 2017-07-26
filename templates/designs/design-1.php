@@ -1,0 +1,3 @@
+  <div class="slick-image-slide" style="height:<?php echo $sliderheightv; ?>px;">
+			<?php $sliderurl = get_post_meta( get_the_ID(),'wpsisac_slide_link', true );				if($sliderurl != '') { ?>				<a href="<?php echo $sliderurl; ?>" >	<img src="<?php echo $url; ?>" alt="<?php the_title(); ?>" />		</a>				<?php } else {  ?>				<img src="<?php echo $url; ?>" alt="<?php the_title(); ?>" />			<?php	}				?>									
+	</div>
