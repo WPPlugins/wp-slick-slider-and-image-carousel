@@ -134,7 +134,7 @@ img {  -ms-interpolation-mode: bicubic; }
    
   @media only screen and (max-width: 40.0625em) {  
    .slick-image-slide img{height: 100% !important;width: 100% !important;object-fit: cover;object-position: top center;}
-   .slick-image-slide, .slide-wrap{height:350px !important;}
+   /*.slick-image-slide, .slide-wrap{height:350px !important;}*/
    .wpsisac-slick-slider h2{font-size:22px; line-height:26px;}
    .slider-short-content p{font-weight:normal !important}
    .wpsisac-slick-slider.design-4 .slick-image-slide, .wpsisac-slick-slider.design-4 .slide-wrap{height:auto !important;}
