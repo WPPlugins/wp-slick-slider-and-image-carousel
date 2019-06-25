@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 				infinite 		: true,
 				slidesToShow	: 1,
 				slidesToScroll	: 1,
-				adaptiveHeight 	: false,
+				adaptiveHeight 	: (slider_conf.adaptiveHeight) == "true" ? true : false,
 				rtl             : (slider_conf.rtl) == "true" ? true : false,
 			});
 		}

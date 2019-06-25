@@ -16,6 +16,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 		"sliderheight"     	=> '',
 		"image_fit" 		=> 'true',
 		"rtl"               => '',
+        "adaptiveHeight"    => 'false',
 	), $atts));	
 	
 	 
@@ -34,6 +35,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	$sliderheight 		= (!empty($sliderheight)) 			? $sliderheight 				: '';
 	$slider_height_css 	= (!empty($sliderheight))			? "style='height:{$sliderheight}px;'" : '';
 	$sliderimage_size 	= !empty($image_size) 				? $image_size 					: 'full';
+    $adaptiveHeight     = ( $adaptiveHeight === 'true' ) 	? 'true' 						: 'false';
 	
 	// For RTL
 	if( empty($rtl) && is_rtl() ) {
@@ -57,7 +59,7 @@ function get_wpsisac_slider( $atts, $content = null ){
 	$image_fit_class = ( $image_fit ) 			? 'wpsisac-image-fit'		: '';
 	
 	// Slider configuration
-	$slider_conf = compact('dots', 'arrows', 'autoplay', 'autoplay_interval', 'fade','speed', 'rtl');
+	$slider_conf = compact('dots', 'arrows', 'autoplay', 'autoplay_interval', 'fade','speed', 'rtl', 'adaptiveHeight');
 	
 	ob_start();	
 	
